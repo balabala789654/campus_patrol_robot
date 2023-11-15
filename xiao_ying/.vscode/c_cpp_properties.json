@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/install/pointcloud_to_laserscan/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/install/imu_complementary_filter/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/src/FAST_LIO/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/src/imu_complementary_filter/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/src/linefit_ground_segmentation_ros2/linefit_ground_segmentation/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_to_pointcloud2/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/src/pointcloud_to_laserscan/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/src/start/include/**",
+        "/home/lx/robot/campus_patrol_robot/xiao_ying/src/xiao_ying_navigation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
