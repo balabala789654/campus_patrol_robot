@@ -1,0 +1,9 @@
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/uninstall.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/xiao_ying_navigation_uninstall.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/test.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/edit_cache.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/rebuild_cache.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/list_install_components.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/install.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/install/local.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/xiao_ying_navigation/CMakeFiles/install/strip.dir

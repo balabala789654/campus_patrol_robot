@@ -1,0 +1,354 @@
+[0.098s] Invoking command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio': AMENT_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lx/robot/campus_patrol_robot/xiao_ying/src/FAST_LIO -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio
+[0.159s] -- The C compiler identification is GNU 11.4.0
+[0.218s] -- The CXX compiler identification is GNU 11.4.0
+[0.224s] -- Detecting C compiler ABI info
+[0.289s] -- Detecting C compiler ABI info - done
+[0.296s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.297s] -- Detecting C compile features
+[0.297s] -- Detecting C compile features - done
+[0.299s] -- Detecting CXX compiler ABI info
+[0.379s] -- Detecting CXX compiler ABI info - done
+[0.386s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.386s] -- Detecting CXX compile features
+[0.386s] -- Detecting CXX compile features - done
+[0.387s] [0mCurrent CPU archtecture: x86_64[0m
+[0.392s] [0mProcesser number:  12[0m
+[0.392s] [0mcore for MP: 3[0m
+[0.696s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[0.698s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.855s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.930s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.959s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.963s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.970s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.981s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.997s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.057s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.059s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.136s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.160s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.206s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.216s] -- Looking for pthread.h
+[1.274s] -- Looking for pthread.h - found
+[1.274s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.335s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.336s] -- Found Threads: TRUE  
+[1.505s] -- Found rclcpp_components: 16.0.6 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.565s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.607s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.684s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.763s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[1.781s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.895s] -- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.187s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.188s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.188s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.512s] -- Checking for module 'eigen3'
+[2.522s] --   Found eigen3, version 3.4.0
+[2.546s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.546s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.577s] -- Checking for module 'flann'
+[2.588s] --   Found flann, version 1.9.1
+[2.616s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.616s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.502s] -- Checking for module 'libusb-1.0'
+[3.525s] --   Found libusb-1.0, version 1.0.25
+[3.575s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.576s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.654s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.879s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.889s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.898s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.142s] -- Found Qhull version 8.0.2
+[4.329s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.482s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[4.482s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[4.483s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[4.484s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[4.485s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[4.485s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[4.486s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[4.486s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[4.487s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[4.488s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[4.489s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[4.489s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[4.491s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[4.491s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[4.492s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[4.493s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[4.494s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[4.495s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[4.496s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[4.497s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[4.497s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[4.498s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[4.499s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[4.500s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[4.501s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[4.515s] -- Found livox_ros_driver2: 1.0.0 (/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[4.693s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.702s] [33mCMake Warning (dev) at CMakeLists.txt:81 (find_package):
+[4.702s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[4.702s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[4.702s]   command to set the policy and suppress this warning.
+[4.702s] 
+[4.702s]   CMake variable PCL_ROOT is set to:
+[4.702s] 
+[4.702s]     /usr
+[4.702s] 
+[4.702s]   For compatibility, CMake is ignoring the variable.
+[4.703s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.703s] [0m
+[4.708s] -- PCL: /usr/include/pcl-1.12
+[4.708s] [0mEigen:/usr/local/include/eigen3[0m
+[4.918s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.201s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.313s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.338s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.340s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.364s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.364s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.364s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.364s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.383s] -- Found PythonExtra: .so  
+[5.505s] -- Configuring done
+[5.567s] -- Generating done
+[5.570s] [33mCMake Warning:
+[5.570s]   Manually-specified variables were not used by the project:
+[5.570s] 
+[5.570s]     HUMBLE_ROS
+[5.570s]     ROS_EDITION
+[5.570s] 
+[5.570s] [0m
+[5.571s] -- Build files have been written to: /home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio
+[5.595s] Invoked command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio' returned '0': AMENT_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lx/robot/campus_patrol_robot/xiao_ying/src/FAST_LIO -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio
+[5.596s] Invoking command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio': AMENT_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio -- -j12 -l12
+[5.630s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.641s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.651s] [  5%] Built target ament_cmake_python_copy_fast_lio
+[5.933s] [  5%] Built target fast_lio__cpp
+[5.941s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.943s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.943s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.952s] [ 17%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o[0m
+[5.978s] running egg_info
+[5.979s] creating fast_lio.egg-info
+[5.979s] writing fast_lio.egg-info/PKG-INFO
+[5.979s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[5.980s] writing top-level names to fast_lio.egg-info/top_level.txt
+[5.980s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[5.984s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[5.984s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[6.037s] [ 17%] Built target ament_cmake_python_build_fast_lio_egg
+[6.094s] [ 20%] [32m[1mLinking C shared library libfast_lio__rosidl_generator_c.so[0m
+[6.139s] [ 20%] Built target fast_lio__rosidl_generator_c
+[6.150s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.152s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.152s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.274s] [ 31%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[6.439s] [ 34%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o[0m
+[6.448s] [ 37%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o[0m
+[6.562s] [ 40%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so[0m
+[6.618s] [ 42%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[6.622s] [ 42%] Built target fast_lio__rosidl_typesupport_cpp
+[6.648s] [ 48%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o[0m
+[6.648s] [ 48%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[6.650s] [ 51%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o[0m
+[6.653s] [ 54%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o[0m
+[6.662s] [ 57%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so[0m
+[6.672s] [ 60%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o[0m
+[6.717s] [ 60%] Built target fast_lio__rosidl_typesupport_c
+[6.752s] [ 62%] [32m[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so[0m
+[6.791s] [ 62%] Built target fast_lio__rosidl_typesupport_introspection_c
+[6.872s] [ 65%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so[0m
+[6.909s] [ 65%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[7.023s] [ 68%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.158s] [ 71%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so[0m
+[7.182s] [ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[7.393s] [ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[7.427s] [ 71%] Built target fast_lio
+[7.460s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.119s] [ 74%] Built target fast_lio__py
+[8.150s] [ 77%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o[0m
+[8.409s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so[0m
+[8.473s] [ 80%] Built target fast_lio__rosidl_generator_py
+[8.499s] [ 85%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[8.499s] [ 85%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o[0m
+[8.502s] [ 88%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.661s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.709s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.713s] [ 94%] Built target fast_lio__rosidl_typesupport_c__pyext
+[8.724s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.762s] [ 97%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[8.764s] [ 97%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[14.503s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/date_time/microsec_time_clock.hpp:18[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36[m[K,
+[14.504s]                  from [01m[K/usr/include/boost/interprocess/sync/file_lock.hpp:26[m[K,
+[14.504s]                  from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46[m[K,
+[14.504s]                  from [01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions.h:72[m[K,
+[14.504s]                  from [01m[K/home/lx/robot/campus_patrol_robot/xiao_ying/src/FAST_LIO/src/IMU_Processing.hpp:18[m[K,
+[14.504s]                  from [01m[K/home/lx/robot/campus_patrol_robot/xiao_ying/src/FAST_LIO/src/laserMapping.cpp:47[m[K:
+[14.504s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[14.505s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[14.505s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[68.299s] [100%] [32m[1mLinking CXX executable fastlio_mapping[0m
+[69.632s] [100%] Built target fastlio_mapping
+[69.642s] Invoked command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio' returned '0': AMENT_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio -- -j12 -l12
+[69.683s] Invoking command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio': AMENT_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio
+[69.689s] -- Install configuration: "Release"
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.c
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[69.689s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[69.690s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/library_path.sh
+[69.690s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[69.690s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[69.690s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""
+[69.690s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio
+[69.690s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg
+[69.690s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[69.690s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[69.690s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[69.690s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[69.690s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""
+[69.690s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio
+[69.690s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg
+[69.691s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[69.691s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio
+[69.691s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg
+[69.691s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/dds_fastrtps
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[69.691s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""
+[69.691s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio
+[69.691s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg
+[69.691s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.c
+[69.691s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[69.692s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[69.692s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""
+[69.692s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio
+[69.692s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg
+[69.692s] -- Up-to-date: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.cpp
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[69.692s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[69.692s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""
+[69.692s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg
+[69.693s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[69.694s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[69.694s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[69.694s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[69.694s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[69.694s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[69.719s] Listing '/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[69.719s] Compiling '/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[69.719s] Listing '/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[69.719s] Compiling '/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[69.719s] Compiling '/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[69.723s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[69.723s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[69.723s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[69.723s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[69.723s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[69.723s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[69.723s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[69.724s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""
+[69.724s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[69.724s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[69.724s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/fast_lio/fastlio_mapping
+[69.725s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/lib/fast_lio/fastlio_mapping" to ""
+[69.725s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/config
+[69.725s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/config/avia.yaml
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/config/horizon.yaml
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/config/mid360.yaml
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/launch
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/launch/mapping_avia.launch
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/launch/mapping_velodyne.launch
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/launch/mapping_horizon.launch
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/launch/mapping_ouster64.launch
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/rviz
+[69.726s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/path.sh
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/environment/path.dsv
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/local_setup.bash
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/local_setup.sh
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/local_setup.zsh
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/local_setup.dsv
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/package.dsv
+[69.727s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[69.728s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[69.729s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[69.730s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[69.730s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[69.730s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[69.730s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/fast_lio/share/fast_lio/package.xml
+[69.731s] Invoked command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio' returned '0': AMENT_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lx/robot/campus_patrol_robot/xiao_ying/build/fast_lio

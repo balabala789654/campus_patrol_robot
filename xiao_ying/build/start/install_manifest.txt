@@ -1,0 +1,16 @@
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start//launch/start.launch.py
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/ament_index/resource_index/package_run_dependencies/start
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/ament_index/resource_index/parent_prefix_path/start
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/environment/ament_prefix_path.sh
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/environment/ament_prefix_path.dsv
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/environment/path.sh
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/environment/path.dsv
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/local_setup.bash
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/local_setup.sh
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/local_setup.zsh
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/local_setup.dsv
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/package.dsv
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/ament_index/resource_index/packages/start
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/cmake/startConfig.cmake
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/cmake/startConfig-version.cmake
+/home/lx/robot/campus_patrol_robot/xiao_ying/install/start/share/start/package.xml

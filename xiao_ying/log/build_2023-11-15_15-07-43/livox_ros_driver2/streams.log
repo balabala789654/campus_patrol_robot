@@ -1,0 +1,168 @@
+[0.206s] Invoking command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2 -DCMAKE_INSTALL_PREFIX=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2
+[0.277s] -- The C compiler identification is GNU 11.4.0
+[0.340s] -- The CXX compiler identification is GNU 11.4.0
+[0.348s] -- Detecting C compiler ABI info
+[0.404s] -- Detecting C compiler ABI info - done
+[0.416s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.416s] -- Detecting C compile features
+[0.416s] -- Detecting C compile features - done
+[0.420s] -- Detecting CXX compiler ABI info
+[0.481s] -- Detecting CXX compiler ABI info - done
+[0.487s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.487s] -- Detecting CXX compile features
+[0.488s] -- Detecting CXX compile features - done
+[0.488s] -- livox_ros_driver2 version: 1.0.0
+[0.489s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.632s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.778s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.786s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.837s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.953s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.955s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.028s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.050s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.090s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.098s] -- Looking for pthread.h
+[1.152s] -- Looking for pthread.h - found
+[1.152s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.204s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.205s] -- Found Threads: TRUE  
+[1.674s] -- Checking for module 'eigen3'
+[1.682s] --   Found eigen3, version 3.4.0
+[1.701s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.702s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.721s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.734s] -- Checking for module 'flann'
+[1.742s] --   Found flann, version 1.9.1
+[1.765s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.765s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.797s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[1.802s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.937s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[1.937s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.939s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.948s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.964s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.981s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[2.065s] -- Found X11: /usr/include   
+[2.066s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[2.129s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[2.129s] -- Looking for gethostbyname
+[2.185s] -- Looking for gethostbyname - found
+[2.186s] -- Looking for connect
+[2.247s] -- Looking for connect - found
+[2.247s] -- Looking for remove
+[2.314s] -- Looking for remove - found
+[2.314s] -- Looking for shmat
+[2.373s] -- Looking for shmat - found
+[2.373s] -- Looking for IceConnectionNumber in ICE
+[2.432s] -- Looking for IceConnectionNumber in ICE - found
+[2.503s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[2.506s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[2.510s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[2.512s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[2.533s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[2.546s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[2.551s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[2.559s] -- Found utf8cpp: /usr/include/utf8cpp  
+[2.639s] -- Checking for module 'libusb-1.0'
+[2.655s] --   Found libusb-1.0, version 1.0.25
+[2.688s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.689s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[2.690s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.748s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[2.748s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.748s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[2.982s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.991s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.998s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.199s] -- Found Qhull version 8.0.2
+[3.365s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.573s] -- looking for PCL_COMMON
+[3.578s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.578s] -- looking for PCL_KDTREE
+[3.580s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.580s] -- looking for PCL_OCTREE
+[3.581s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.582s] -- looking for PCL_SEARCH
+[3.583s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.583s] -- looking for PCL_SAMPLE_CONSENSUS
+[3.585s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.585s] -- looking for PCL_FILTERS
+[3.587s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.587s] -- looking for PCL_2D
+[3.587s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.587s] -- looking for PCL_GEOMETRY
+[3.588s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.588s] -- looking for PCL_IO
+[3.590s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.590s] -- looking for PCL_FEATURES
+[3.592s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.592s] -- looking for PCL_ML
+[3.594s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.594s] -- looking for PCL_SEGMENTATION
+[3.596s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.596s] -- looking for PCL_VISUALIZATION
+[3.598s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.598s] -- looking for PCL_SURFACE
+[3.600s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.600s] -- looking for PCL_REGISTRATION
+[3.602s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.602s] -- looking for PCL_KEYPOINTS
+[3.604s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.604s] -- looking for PCL_TRACKING
+[3.606s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.606s] -- looking for PCL_RECOGNITION
+[3.607s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.608s] -- looking for PCL_STEREO
+[3.609s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.610s] -- looking for PCL_APPS
+[3.611s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.612s] -- looking for PCL_IN_HAND_SCANNER
+[3.612s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.613s] -- looking for PCL_MODELER
+[3.613s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.613s] -- looking for PCL_POINT_CLOUD_EDITOR
+[3.613s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.614s] -- looking for PCL_OUTOFCORE
+[3.616s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.616s] -- looking for PCL_PEOPLE
+[3.618s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.619s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[3.625s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[3.626s] -- Checking for module 'apr-1'
+[3.642s] --   Found apr-1, version 1.7.0
+[3.674s] [0m/usr/include/apr-1.0[0m
+[3.674s] [0mapr-1[0m
+[3.887s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.081s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.324s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.343s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.345s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.367s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.367s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.367s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.367s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.385s] -- Found PythonExtra: .so  
+[4.551s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.579s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.586s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.588s] -- Configured cppcheck include dirs: /home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2/3rdparty;/home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2/src
+[4.588s] -- Configured cppcheck exclude dirs and/or files: 
+[4.594s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.595s] -- Configured cpplint exclude dirs and/or files: 
+[4.596s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.598s] -- Added test 'lint_cmake' to check CMake code style
+[4.599s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.606s] -- Added test 'uncrustify' to check C / C++ code style
+[4.606s] -- Configured uncrustify additional arguments: 
+[4.607s] -- Added test 'xmllint' to check XML markup files
+[4.610s] -- Configuring done
+[4.617s] [0mCMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+[4.617s] Please set them or make sure they are set and tested correctly in the CMake files:
+[4.618s] /home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2/LIVOX_INTERFACES_INCLUDE_DIRECTORIES
+[4.618s]    used as include directory in directory /home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2
+[4.618s] [0m
+[4.703s] -- Generating done
+[4.708s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[4.747s] Invoked command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/livox_ros_driver2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2 -DCMAKE_INSTALL_PREFIX=/home/lx/robot/campus_patrol_robot/xiao_ying/install/livox_ros_driver2

@@ -1,0 +1,9 @@
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/uninstall.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/start_uninstall.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/test.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/edit_cache.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/rebuild_cache.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/list_install_components.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/install.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/install/local.dir
+/home/lx/robot/campus_patrol_robot/xiao_ying/build/start/CMakeFiles/install/strip.dir

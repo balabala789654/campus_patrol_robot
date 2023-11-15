@@ -1,0 +1,7 @@
+{
+  "package_name": "livox_ros_driver2",
+  "non_idl_tuples": [
+    "/home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2:msg/CustomPoint.msg",
+    "/home/lx/robot/campus_patrol_robot/xiao_ying/src/livox_ros_driver2:msg/CustomMsg.msg"
+  ]
+}

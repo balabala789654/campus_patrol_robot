@@ -1,0 +1,127 @@
+[0.210s] Invoking command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/robot/campus_patrol_robot/xiao_ying/src/linefit_ground_segmentation_ros2/linefit_ground_segmentation -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation
+[0.259s] -- The C compiler identification is GNU 11.4.0
+[0.304s] -- The CXX compiler identification is GNU 11.4.0
+[0.312s] -- Detecting C compiler ABI info
+[0.369s] -- Detecting C compiler ABI info - done
+[0.376s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.376s] -- Detecting C compile features
+[0.377s] -- Detecting C compile features - done
+[0.380s] -- Detecting CXX compiler ABI info
+[0.446s] -- Detecting CXX compiler ABI info - done
+[0.452s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.453s] -- Detecting CXX compile features
+[0.453s] -- Detecting CXX compile features - done
+[0.454s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.607s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.789s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.793s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.800s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.811s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.827s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.885s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.887s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.963s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.988s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.040s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.051s] -- Looking for pthread.h
+[1.106s] -- Looking for pthread.h - found
+[1.106s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.158s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.160s] -- Found Threads: TRUE  
+[1.775s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.776s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.777s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.147s] -- Checking for module 'eigen3'
+[2.157s] --   Found eigen3, version 3.4.0
+[2.192s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.192s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.234s] -- Checking for module 'flann'
+[2.251s] --   Found flann, version 1.9.1
+[2.310s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.311s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.377s] -- Checking for module 'libusb-1.0'
+[3.394s] --   Found libusb-1.0, version 1.0.25
+[3.435s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.436s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.502s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.728s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.735s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.743s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.878s] -- Found Qhull version 8.0.2
+[4.005s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.134s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[4.135s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[4.136s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[4.137s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[4.138s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[4.139s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[4.139s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[4.139s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[4.141s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[4.141s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[4.142s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[4.143s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[4.144s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[4.145s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[4.146s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[4.147s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[4.148s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[4.149s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[4.150s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[4.151s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[4.152s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[4.152s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[4.152s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[4.154s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[4.154s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[4.259s] -- Configuring done
+[4.291s] -- Generating done
+[4.293s] [33mCMake Warning:
+[4.293s]   Manually-specified variables were not used by the project:
+[4.293s] 
+[4.293s]     HUMBLE_ROS
+[4.293s]     ROS_EDITION
+[4.293s] 
+[4.294s] [0m
+[4.294s] -- Build files have been written to: /home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation
+[4.320s] Invoked command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/robot/campus_patrol_robot/xiao_ying/src/linefit_ground_segmentation_ros2/linefit_ground_segmentation -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation
+[4.322s] Invoking command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation -- -j12 -l12
+[4.365s] [ 20%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/segment.cc.o[0m
+[4.366s] [ 60%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/bin.cc.o[0m
+[4.366s] [ 60%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/ground_segmentation.cc.o[0m
+[4.366s] [ 80%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/viewer.cc.o[0m
+[16.625s] [100%] [32m[1mLinking CXX shared library liblinefit_ground_segmentation.so[0m
+[17.288s] [100%] Built target linefit_ground_segmentation
+[17.298s] Invoked command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation -- -j12 -l12
+[17.321s] Invoking command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation
+[17.327s] -- Install configuration: ""
+[17.327s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include
+[17.327s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include/ground_segmentation
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include/ground_segmentation/ground_segmentation.h
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include/ground_segmentation/bin.h
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include/ground_segmentation/typedefs.h
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include/ground_segmentation/segment.h
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/include/ground_segmentation/viewer.h
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/library_path.sh
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/library_path.dsv
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/lib/liblinefit_ground_segmentation.so
+[17.328s] -- Set runtime path of "/home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/lib/liblinefit_ground_segmentation.so" to ""
+[17.328s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/ament_index/resource_index/package_run_dependencies/linefit_ground_segmentation
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/ament_index/resource_index/parent_prefix_path/linefit_ground_segmentation
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/ament_prefix_path.sh
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/ament_prefix_path.dsv
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/path.sh
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/path.dsv
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.bash
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.sh
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.zsh
+[17.329s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.dsv
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.dsv
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/ament_index/resource_index/packages/linefit_ground_segmentation
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_libraries-extras.cmake
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/linefit_ground_segmentationConfig.cmake
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/linefit_ground_segmentationConfig-version.cmake
+[17.330s] -- Installing: /home/lx/robot/campus_patrol_robot/xiao_ying/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.xml
+[17.331s] Invoked command in '/home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/robot/campus_patrol_robot/xiao_ying/build/linefit_ground_segmentation
