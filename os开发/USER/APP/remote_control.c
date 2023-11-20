@@ -1,5 +1,4 @@
-//#include "Remote_Control.h"
-#include "main.h"
+#include "Remote_Control.h"
 
 RC_ctrl_t rc_ctrl;// static
 
@@ -12,11 +11,11 @@ static uint8_t SBUS_rx_buf[2][SBUS_RX_BUF_NUM];
 //初始化DMA，串口3
 void remote_control_init(void)
 {
-    RC_Init(SBUS_rx_buf[0], SBUS_rx_buf[1], SBUS_RX_BUF_NUM);
+    usart2_Init(SBUS_rx_buf[0], SBUS_rx_buf[1], SBUS_RX_BUF_NUM);
 }
 
 //串口中断   大疆官方是USART2
-void USART3_IRQHandler(void)
+void USART2_IRQHandler(void)
 {
     if (USART_GetITStatus(rc_USARTx, USART_IT_RXNE) != RESET)//检查指定的USART中断是否发生  接受中断
     {
@@ -35,7 +34,7 @@ void USART3_IRQHandler(void)
             DMA_SetCurrDataCounter(rc_DMAx_Streamx, SBUS_RX_BUF_NUM);	//将 dma 内存指针重新定位到起始位置
             rc_DMAx_Streamx->CR |= DMA_SxCR_CT;	//启用当前选定的内存为内存 1
             //清DMA中断标志
-            DMA_ClearFlag(rc_DMAx_Streamx, DMA_FLAG_TCIF4 | DMA_FLAG_HTIF4);
+            DMA_ClearFlag(rc_DMAx_Streamx, DMA_FLAG_TCIF5 | DMA_FLAG_HTIF5);
             DMA_Cmd(rc_DMAx_Streamx, ENABLE);
 
             if(this_time_rx_len == RC_FRAME_LENGTH)	//确保接收到完整的帧数据。
@@ -54,7 +53,7 @@ void USART3_IRQHandler(void)
             DMA_SetCurrDataCounter(rc_DMAx_Streamx, SBUS_RX_BUF_NUM);	//将 dma 内存指针重新定位到起始位置
             rc_DMAx_Streamx->CR &= ~(DMA_SxCR_CT);
             //清DMA中断标志
-            DMA_ClearFlag(rc_DMAx_Streamx, DMA_FLAG_TCIF4 | DMA_FLAG_HTIF4);
+            DMA_ClearFlag(rc_DMAx_Streamx, DMA_FLAG_TCIF5 | DMA_FLAG_HTIF5);
             DMA_Cmd(rc_DMAx_Streamx, ENABLE);
 
             if(this_time_rx_len == RC_FRAME_LENGTH)
@@ -66,6 +65,7 @@ void USART3_IRQHandler(void)
 				USART_ClearITPendingBit(rc_USARTx, USART_IT_IDLE);
     }
 }
+
 
 static void SBUS_TO_RC(volatile const uint8_t *sbus_buf, RC_ctrl_t *rc_ctrl)
 {

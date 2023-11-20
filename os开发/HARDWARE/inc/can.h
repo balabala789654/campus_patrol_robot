@@ -6,6 +6,18 @@
 u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);
 u8 CAN2_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);
 
+typedef struct
+{
+    uint16_t ecd;
+    int16_t speed_rpm;
+    int16_t given_current;
+    int32_t  all_ecd;
+    int32_t  count;
+
+    uint8_t temperate;
+    int16_t last_ecd;
+	float pid_set_speed;
+} motor_measure_t;
 
 
 #define get_motor_measure(ptr, rx_message)                                              \

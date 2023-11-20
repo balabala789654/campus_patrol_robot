@@ -18,8 +18,8 @@
   */
 #ifndef REMOTE_CONTROL_H
 #define REMOTE_CONTROL_H
-#include "main.h"
-#include "rc.h"
+
+#include "usart.h"
 #define rc_deadline_limit(input, output, dealine)        \
     {                                                    \
         if ((input) > (dealine) || (input) < -(dealine)) \
@@ -34,7 +34,19 @@
 #define RC_CH_VALUE_MIN ((uint16_t)364)
 #define RC_CH_VALUE_OFFSET ((uint16_t)1024)
 #define RC_CH_VALUE_MAX ((uint16_t)1684)
+#define RC_SW_UP ((uint16_t)1)
+#define RC_SW_MID ((uint16_t)3)
+#define RC_SW_DOWN ((uint16_t)2)
 
+#define RC_FRAME_LENGTH 18u
+#define SBUS_RX_BUF_NUM 36u
+
+#define rc_DMAx_Streamx							DMA1_Stream5
+#define rc_DMA_Channel_x						DMA_Channel_4
+#define rc_USARTx										USART2
+#define rc_USARTx_IRQn							USART2_IRQn
+#define rc_GPIO_AF_USARTx  					GPIO_AF_USART2
+	
 /* ----------------------- Data Struct ------------------------------------- */
 typedef __packed struct
 {
