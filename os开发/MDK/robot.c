@@ -5,7 +5,7 @@ RC_ctrl_t* controller_callback(RC_ctrl_t* _rc);
 
 void robot_init(void){
 	float pid_params[5] = {
-		10.0f, 0.5f, 1.0f, 1000.0f, 500.0f
+		10.0f, 0.5f, 1.0f, 2000.0f, 500.0f
 	};	
 	//usart1_init(115200, usart1_buffer);
 	CAN1_Mode_Init(CAN_SJW_1tq,CAN_BS2_4tq,CAN_BS1_9tq,3,CAN_Mode_Normal);
@@ -42,19 +42,22 @@ float* chassis_cal(RC_ctrl_t* _rc, _robot* _bot){
 	return ret;
 }
 
+int ccc=1000;
+float _ret[3];
 float* ros_control_cal(float _linear, float _angle){
 	// m/s 转为 rpm
 	// y = ((30*a)/(pi*r))*x     y: rpm    x: m/s    a:减速比   r:轮径    pi:圆周率
 	float x, y;
-	static float _ret[3];
 	float vx,vy,vw;
 	
-	y = ((30*Motor_reduction_ratio)/(PI*Wheel_radio))*_linear;
+	y = ((30*Motor_reduction_ratio)/(PI*Wheel_radio))*_linear*1;
 	x = 0;
 	
 	vy = y*cos(PI/4)-x*sin(PI/4);
 	vx = y*sin(PI/4)+x*cos(PI/4);
-	vw = ((30*Motor_reduction_ratio)/(PI*Wheel_radio))*_angle;
+	vw = -_angle * ccc;
+//	if(vy > 2000) vy = 2000;
+//	if(vw > 2000) vw = 2000;+
 	_ret[0] = vy;
 	_ret[1] = vx;
 	_ret[2] = vw;
@@ -104,7 +107,7 @@ int chassis_control(RC_ctrl_t* _rc){
 		chassis_drive(chassis_cal(robot.controller(&rc_ctrl), &robot), &robot, 1);
 	}
 	else if(_rc->rc.s[0]==3 && _rc->rc.s[1]==1){
-		chassis_drive(ros_control_cal(robot.twist_linear, robot.twist_linear), &robot, 2);
+		chassis_drive(ros_control_cal(robot.twist_linear, robot.twist_angle), &robot, 2);
 	}
 	else chassis_drive(chassis_cal(robot.controller(&rc_ctrl), &robot), &robot, 0);
 	return 0;

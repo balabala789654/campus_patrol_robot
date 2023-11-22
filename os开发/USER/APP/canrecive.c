@@ -20,7 +20,7 @@ void motor_send_3508(int i1,int i2,int i3,int i4)
 	TxMessage.Data[6]=i4 >> 8;
 	TxMessage.Data[7]=i4; 
 	
-	CAN_Transmit(CAN2,&TxMessage);
+	CAN_Transmit(CAN1,&TxMessage);
 }
 
 void motor_send_6020(int i1,int i2,int i3,int i4)

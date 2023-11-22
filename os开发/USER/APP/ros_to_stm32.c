@@ -29,7 +29,7 @@ void USART6_IRQHandler(void)
 		}
 		if(flag) 
 			usart6_buffers[i++] = USART_ReceiveData(USART6);
-//		usart1_buffer[i++] = USART_ReceiveData(USART1);
+//		usart6_buffers[i++] = USART_ReceiveData(USART6);
 		if(i == 10) {
 			i = 0;
 			
