@@ -2,31 +2,11 @@
 #if SYSTEM_SUPPORT_OS
 #include "FreeRTOS.h"					//FreeRTOS使用	  
 #endif
-//加入以下代码,支持printf函数,而不需要选择use MicroLIB	  
-#if 0
-#pragma import(__use_no_semihosting)             
-//标准库需要的支持函数                 
-struct __FILE 
-{ 
-	int handle; 
-}; 
 
-FILE __stdout;       
-//定义_sys_exit()以避免使用半主机模式    
-void _sys_exit(int x) 
-{ 
-	x = x; 
-} 
-//重定义fputc函数 
-int fputc(int ch, FILE *f)
-{ 	
-	while((USART1->SR&0X40)==0);//循环发送,直到发送完毕   
-	USART1->DR = (u8) ch;      
-	return ch;
-}
-#endif
- 
-void usart1_init(u32 bound){
+#include "const.h"
+#include "robot.h"
+
+void usart1_init(u32 bound, uint8_t* rx1_buf){
 	//GPIO端口设置
 	GPIO_InitTypeDef GPIO_InitStructure;
 	USART_InitTypeDef USART_InitStructure;
@@ -56,11 +36,14 @@ void usart1_init(u32 bound){
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;	//收发模式
 	USART_Init(USART1, &USART_InitStructure); //初始化串口1
 	
+    USART_DMACmd(USART1, USART_DMAReq_Rx, ENABLE);
+	
 	USART_Cmd(USART1, ENABLE);  //使能串口1 
 	
 	//USART_ClearFlag(USART1, USART_FLAG_TC);
 	
 	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启相关中断
+	USART_ITConfig(USART1, USART_IT_IDLE, ENABLE);//开启相关中断
 
 	//Usart1 NVIC 配置
 	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;//串口1中断通道
@@ -69,9 +52,34 @@ void usart1_init(u32 bound){
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
 	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化VIC寄存器、
 	
+//    {
+//        DMA_InitTypeDef DMA_InitStructure;
+//        DMA_DeInit(DMA2_Stream5);
+//        DMA_InitStructure.DMA_Channel = DMA_Channel_4;
+//        DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t) & (USART1->DR);
+//        DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)rx1_buf;
+//        DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;
+//        DMA_InitStructure.DMA_BufferSize = 10;//
+//        DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+//        DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
+//        DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+//        DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+//        DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
+//        DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;
+//        DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
+//        DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_1QuarterFull;
+//        DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+//        DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+//        DMA_Init(DMA2_Stream5, &DMA_InitStructure);
+//        DMA_DoubleBufferModeConfig(DMA2_Stream5, (uint32_t)rx2_buf, DMA_Memory_0);
+//        DMA_DoubleBufferModeCmd(DMA2_Stream5, ENABLE);
+//        DMA_Cmd(DMA2_Stream5, DISABLE); //Add a disable  DMA_Cmd(DMA1_Stream1, DISABLE)
+//        DMA_Cmd(DMA2_Stream5, ENABLE);//   DMA_Cmd(DMA1_Stream1, ENABLE)
+//    }
+	
 }
 
-void usart2_Init(uint8_t* rx1_buf, uint8_t* rx2_buf, uint16_t dma_buf_num)//数组0 1   缓存长度
+void usart2_Init(uint8_t* rx1_buf, uint8_t* rx2_buf, uint16_t dma_buf_num)
 {
     /* -------------- Enable Module Clock Source ----------------------------*/
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);// | RCC_AHB1Periph_DMA1
@@ -107,7 +115,7 @@ void usart2_Init(uint8_t* rx1_buf, uint8_t* rx2_buf, uint16_t dma_buf_num)//数组
 
         USART_ClearFlag(USART2, USART_FLAG_IDLE);
         USART_ITConfig(USART2, USART_IT_IDLE, ENABLE);
-
+		USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);
         USART_Cmd(USART2, ENABLE);
     }
 
@@ -149,18 +157,130 @@ void usart2_Init(uint8_t* rx1_buf, uint8_t* rx2_buf, uint16_t dma_buf_num)//数组
     }
 }
 
-int rec[16];
+void usart6_init(u32 bound){
+	//GPIO端口设置
+	GPIO_InitTypeDef GPIO_InitStructure;
+	USART_InitTypeDef USART_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
+	
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC,ENABLE); //使能GPIOA时钟
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART6,ENABLE);//使能USART1时钟
+ 
+	//串口1对应引脚复用映射
+	GPIO_PinAFConfig(GPIOC,GPIO_PinSource7,GPIO_AF_USART6); //GPIOA9复用为USART1
+	GPIO_PinAFConfig(GPIOC,GPIO_PinSource6,GPIO_AF_USART6); //GPIOA10复用为USART1
+	
+	//USART1端口配置
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7; //GPIOA9与GPIOA10
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;//复用功能
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;	//速度50MHz
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP; //推挽复用输出
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP; //上拉
+	GPIO_Init(GPIOC,&GPIO_InitStructure); //初始化PA9，PA10
+
+   //USART1 初始化设置
+	USART_InitStructure.USART_BaudRate = bound;//波特率设置
+	USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+	USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+	USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;	//收发模式
+	USART_Init(USART6, &USART_InitStructure); //初始化串口1
+
+	USART_Cmd(USART6, ENABLE);  //使能串口1 
+	USART_DMACmd(USART6, USART_DMAReq_Rx, ENABLE);
+
+	//USART_ClearFlag(USART1, USART_FLAG_TC);
+	
+	USART_ITConfig(USART6, USART_IT_RXNE, ENABLE);//开启相关中断
+	USART_ITConfig(USART6, USART_IT_IDLE, ENABLE);//开启相关中断
+
+	//Usart1 NVIC 配置
+	NVIC_InitStructure.NVIC_IRQChannel = USART6_IRQn;//串口1中断通道
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=3;//抢占优先级3
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority =3;		//子优先级3
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
+	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化VIC寄存器、
+	
+//	
+//	{
+//        DMA_InitTypeDef DMA_InitStructure;
+//        DMA_DeInit(DMA2_Stream1);
+//        DMA_InitStructure.DMA_Channel = DMA_Channel_5;
+//        DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t) & (USART6->DR);
+//        DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)rx1_buf;
+//        DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;
+//        DMA_InitStructure.DMA_BufferSize = 10;	//
+//        DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+//        DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
+//        DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+//        DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+//        DMA_InitStructure.DMA_Mode = DMA_Mode_Circular; // 循环模式
+//        DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;
+//        DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
+//        DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_1QuarterFull;
+//        DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+//        DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+//        DMA_Init(DMA2_Stream1, &DMA_InitStructure);
+//        DMA_DoubleBufferModeConfig(DMA2_Stream1, (uint32_t)rx2_buf, DMA_Memory_0);
+//        DMA_DoubleBufferModeCmd(DMA2_Stream1, ENABLE);
+//        DMA_Cmd(DMA2_Stream1, DISABLE); //Add a disable  DMA_Cmd(DMA1_Stream1, DISABLE)
+//        DMA_Cmd(DMA2_Stream1, ENABLE);//   DMA_Cmd(DMA1_Stream1, ENABLE)
+//    }
+	
+}
+
+union DoubleToBytes
+{
+	float value;
+	char bytes[4];
+};
+union DoubleToBytes conver;
+union DoubleToBytes conver1;
+
+uint8_t usart1_buffer[10];
+
 static int i=0;
+static char flag=0;
 void USART1_IRQHandler(void)                	//串口1中断服务程序
 {
-	
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
 	{
-		rec[i++] = USART_ReceiveData(USART1);
-		if(i == 16) i=0;
+		if(USART_ReceiveData(USART1) == frame_head) 
+			flag=1;
+		else if(USART_ReceiveData(USART1) == frame_end) 
+		{
+			usart1_buffer[i++] = USART_ReceiveData(USART1);
+			flag=0;
+		}
+		if(flag) 
+			usart1_buffer[i++] = USART_ReceiveData(USART1);
+//		usart1_buffer[i++] = USART_ReceiveData(USART1);
+		if(i == 10) {
+			i = 0;
+			
+			conver.bytes[0]=usart1_buffer[1];
+			conver.bytes[1]=usart1_buffer[2];
+			conver.bytes[2]=usart1_buffer[3];
+			conver.bytes[3]=usart1_buffer[4];
+
+			conver1.bytes[0]=usart1_buffer[5];
+			conver1.bytes[1]=usart1_buffer[6];
+			conver1.bytes[2]=usart1_buffer[7];
+			conver1.bytes[3]=usart1_buffer[8];
+			
+			robot.twist_linear = conver.value;
+			robot.twist_angle = conver1.value;
+		}
 		USART_ClearFlag(USART1, USART_FLAG_RXNE);
 	}
+	else if(USART_GetITStatus(USART1, USART_IT_IDLE) != RESET){
+		USART_ReceiveData(USART1);
+		USART_ClearFlag(USART1, USART_FLAG_IDLE);
+	}
 } 
+
+
 
 void RC_unable(void)
 {

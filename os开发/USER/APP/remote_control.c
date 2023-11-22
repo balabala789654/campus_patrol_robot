@@ -55,7 +55,6 @@ void USART2_IRQHandler(void)
             //清DMA中断标志
             DMA_ClearFlag(rc_DMAx_Streamx, DMA_FLAG_TCIF5 | DMA_FLAG_HTIF5);
             DMA_Cmd(rc_DMAx_Streamx, ENABLE);
-
             if(this_time_rx_len == RC_FRAME_LENGTH)
             {
                 //处理遥控器数据

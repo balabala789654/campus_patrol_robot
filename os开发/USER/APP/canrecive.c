@@ -65,10 +65,10 @@ void CAN2_RX1_IRQHandler(void)
 	CAN_Receive(CAN2,CAN_FIFO1,&Rx2Message);
 	switch(Rx2Message.StdId)
 	{
-		case 0x201: get_motor_measure(&robot.motor[0].feed_back, Rx2Message);break;
-		case 0x202: get_motor_measure(&robot.motor[1].feed_back, Rx2Message);break;
-		case 0x203: get_motor_measure(&robot.motor[2].feed_back, Rx2Message);break;
-		case 0x204: get_motor_measure(&robot.motor[3].feed_back, Rx2Message);break;
+		case 0x204: get_motor_measure(&robot.motor[0].feed_back, Rx2Message);break;
+		case 0x203: get_motor_measure(&robot.motor[1].feed_back, Rx2Message);break;
+		case 0x201: get_motor_measure(&robot.motor[2].feed_back, Rx2Message);break;
+		case 0x202: get_motor_measure(&robot.motor[3].feed_back, Rx2Message);break;
 	}
 
 }

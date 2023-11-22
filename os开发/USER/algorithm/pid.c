@@ -34,10 +34,11 @@ float PID_calc(PidType *pid, float ref, float set)
     pid->set = set;
     pid->fdb = ref;
     pid->error[0] = set - ref;
-	/**********************************积分分离判断***************************************/
-	if(pid->error[0] >= pid->compare ||pid->error[0] <= -(pid->compare)) pid->integral = off;	//积分关闭
-	else pid->integral = on;	//积分开启
-	/*********************************************************************************/
+//	/**********************************积分分离判断***************************************/
+//	if(pid->error[0] >= pid->compare ||pid->error[0] <= -(pid->compare)) pid->integral = off;	//积分关闭
+//	else pid->integral = on;	//积分开启
+//	/*********************************************************************************/
+	pid->integral = on;
     if (pid->mode == PID_POSITION)//位置式PID算法
     {
         pid->Pout = pid->Kp * pid->error[0];
