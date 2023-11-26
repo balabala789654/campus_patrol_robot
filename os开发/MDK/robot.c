@@ -51,13 +51,11 @@ float* ros_control_cal(float _linear, float _angle){
 	float vx,vy,vw;
 	
 	y = ((30*Motor_reduction_ratio)/(PI*Wheel_radio))*_linear*1;
-	x = 0;
+ 	x = 0;
 	
 	vy = y*cos(PI/4)-x*sin(PI/4);
 	vx = y*sin(PI/4)+x*cos(PI/4);
 	vw = -_angle * ccc;
-//	if(vy > 2000) vy = 2000;
-//	if(vw > 2000) vw = 2000;+
 	_ret[0] = vy;
 	_ret[1] = vx;
 	_ret[2] = vw;

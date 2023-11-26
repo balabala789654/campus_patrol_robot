@@ -3316,7 +3316,7 @@ Image component sizes
        596          8          0          0          0       2530   pid.o
        410         74         89         12          0       5951   port.o
        520         38          0          2        124       3324   remote_control.o
-      1566         92         20          4        564       5290   robot.o
+      1566         92         20          4        564       5294   robot.o
        272         28          0         10         82       1790   ros_to_stm32.o
         36          8        392          0       1024        836   startup_stm32f40_41xxx.o
       1092          6          0          0          0       4428   stm32f4xx_can.o
@@ -3330,7 +3330,7 @@ Image component sizes
        800         52          0         13         82       4265   usart.o
 
     ----------------------------------------------------------------------
-     11488        796        608        132       2732     381405   Object Totals
+     11488        796        608        132       2732     381409   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         16          0          8          7          4          0   (incl. Padding)
 
@@ -3403,8 +3403,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     16120       1100        896        140       2732     375849   Grand Totals
-     16120       1100        896        140       2732     375849   ELF Image Totals
+     16120       1100        896        140       2732     375853   Grand Totals
+     16120       1100        896        140       2732     375853   ELF Image Totals
      16120       1100        896        140          0          0   ROM Totals
 
 ==============================================================================
