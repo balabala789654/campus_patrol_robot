@@ -1,0 +1,2 @@
+Invoking command in '/home/lx/campus_patrol_robot/上位机/build/start': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/campus_patrol_robot/上位机/src/start -DCMAKE_INSTALL_PREFIX=/home/lx/campus_patrol_robot/上位机/install/start
+Invoked command in '/home/lx/campus_patrol_robot/上位机/build/start' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/campus_patrol_robot/上位机/src/start -DCMAKE_INSTALL_PREFIX=/home/lx/campus_patrol_robot/上位机/install/start

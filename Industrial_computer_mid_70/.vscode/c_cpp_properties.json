@@ -13,11 +13,13 @@
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/install/linefit_ground_segmentation/include/**",
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/install/imu_complementary_filter/include/**",
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/install/icp_localization_ros2/include/**",
+        "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/install/time_sync/include/**",
         "/opt/ros/humble/include/**",
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/src/rm_localization/fast_lio/include/**",
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/src/rm_localization/icp_localization_ros2/include/**",
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/src/rm_perception/imu_complementary_filter/include/**",
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation/include/**",
+        "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/src/time_sync/include/**",
         "/home/lx/campus_patrol_robot/Industrial_computer_mid_70/src/rm_perception/pointcloud_to_laserscan/include/**",
         "/usr/include/**"
       ],

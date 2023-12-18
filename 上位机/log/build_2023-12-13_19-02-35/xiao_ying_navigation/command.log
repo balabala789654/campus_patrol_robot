@@ -1,0 +1,2 @@
+Invoking command in '/home/lx/campus_patrol_robot/上位机/build/xiao_ying_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/campus_patrol_robot/上位机/src/xiao_ying_navigation -DCMAKE_INSTALL_PREFIX=/home/lx/campus_patrol_robot/上位机/install/xiao_ying_navigation
+Invoked command in '/home/lx/campus_patrol_robot/上位机/build/xiao_ying_navigation' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/campus_patrol_robot/上位机/src/xiao_ying_navigation -DCMAKE_INSTALL_PREFIX=/home/lx/campus_patrol_robot/上位机/install/xiao_ying_navigation
