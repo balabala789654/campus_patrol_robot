@@ -14,6 +14,28 @@
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
     "files.associations": {
-        "functional": "cpp"
+        "functional": "cpp",
+        "*.ipp": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "random": "cpp",
+        "fstream": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "mutex": "cpp",
+        "ostream": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "stop_token": "cpp",
+        "streambuf": "cpp",
+        "regex": "cpp",
+        "tuple": "cpp",
+        "variant": "cpp",
+        "*.txx": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp"
     }
 }
